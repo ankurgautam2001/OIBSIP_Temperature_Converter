@@ -1,74 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap");
+
 body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(90deg, rgba(93, 99, 204, 1) 0%, rgba(245, 240, 242, 1) 100%, rgba(0, 212, 255, 1) 100%);
-    font-family: monospace, sans-serif;
-    color: #0d5370;
+  width: 100%;
+  height: 85vh;
+  background-image: url("/images/bg-img.jpeg");
+  background-size: 120%;
+  display: grid;
+  align-items: center;
+  place-items: center;
+}
+.text-center {
+  background-color: #e8c7c7;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 40%;
 }
 
 .container {
-    background: rgba(0, 212, 255, 0.3);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 4px 10px rgba(0, 0, 0, 0.3);
-    width: 85%;
-    max-width: 800px;
-    min-height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background: rgba(0, 212, 255, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 1200px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .heading {
-    font-size: 32px;
+  font-size: 32px;
+}
+#fa {
+  font-size: 60px;
 }
 
 .temp-container {
-    width: 100%;
-    padding: 15px;
-    font-weight: bold;
-    font-size: 18px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 input {
-    width: 60%;
-    font-family: monospace;
-    padding: 5px;
-    outline: none;
-    background: rgba(0, 212, 255, 0.3);
-    border-color: rgba(255, 255, 255, 0.6);
-    color: darkblue;
-    font-size: 18px;
+  width: 60%;
+  font-family: monospace;
+  padding: 5px;
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.6);
+
+  font-size: 18px;
 }
 
 input::placeholder {
-    color: crimson;
+  color: rgb(81, 6, 21);
 }
 
 /* Responsive CSS */
 @media (min-width: 600px) {
-    .container {
-        width: 70%;
-    }
+  .container {
+    width: 70%;
+  }
 
-    input {
-        width: 50%;
-    }
+  input {
+    width: 50%;
+  }
 }
 
 @media (min-width: 900px) {
-    .container {
-        width: 60%;
-    }
+  .container {
+    width: 70%;
+  }
 
-    input {
-        width: 40%;
-    }
+  input {
+    width: 50%;
+  }
 }
